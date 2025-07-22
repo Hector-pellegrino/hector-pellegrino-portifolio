@@ -1,5 +1,5 @@
-##Meu Portifolio
-###Tecnologias:
+## Meu Portifolio
+### Tecnologias:
 #### HTML
 #### CSS3
 #### JS
