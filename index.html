@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Héctor Pellegrino</title>
+  </head>
+  <body>
+    <div class="layout-wrapper" id="start">
+      <dialog>
+        <div class="allDialog">
+          <form
+            id="form-contato"
+            action="https://formsubmit.co/hectorpellegrino777@gmail.com"
+            method="POST"
+          >
+            <!-- ESSENCIAIS para evitar redirecionamento e recaptcha -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_redirect" value="" />
+            <input type="hidden" name="_next" value="" />
+            <div class="nameAndEmail">
+              <input type="text" name="nome" placeholder="Nome" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input type="text" name="titulo" placeholder="Título" required />
+            <textarea
+              name="mensagem"
+              placeholder="Digite sua mensagem"
+              required
+            ></textarea>
+            <div class="enviarAndX">
+              <input id="enviar" type="submit" value="Enviar" />
+              <img
+                onclick="fecharPopup()"
+                id="x"
+                src="/assets/close.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Mensagem de sucesso oculta -->
+            <p
+              id="mensagem-sucesso"
+              style="display: none; color: green; margin-top: 10px"
+            >
+              Mensagem enviada com sucesso!
+            </p>
+          </form>
+        </div>
+      </dialog>
+
+      <header>
+        <p class="hector">Héctor Pellegrino</p>
+        <nav>
+          <ul class="itens">
+            <li><a href="#start" class="a-nav">Home</a></li>
+            <li><a href="#works" class="a-nav">Projetos</a></li>
+            <li><a href="#skills-section" class="a-nav">Skills</a></li>
+            <li><a href="#about-me" class="a-nav">Sobre</a></li>
+            <li><a href="#contact" class="a-nav">Contato</a></li>
+          </ul>
+          <div class="menu" onclick="clickMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="start">
+          <div class="start-left">
+            <p>Olá, visitante !</p>
+            <h1>Meu nome é Pellegrino</h1>
+            <div class="p-start-mobile">
+              <p>Desenvolvimento Web</p>
+              <p>Automação de Processos</p>
+              <p>Sotwares de gestão</p>
+            </div>
+            <p class="p-start-tablet-laptop">
+              Desenvolvimento Web | Automação de Processos | Sotwares de gestão
+            </p>
+            <button onclick="abrirPopup()" id="popup" class="btn-gradiente">
+              Contate-me
+            </button>
+          </div>
+        </section>
+        <div id="works" class="line-end"></div>
+
+        <section class="works">
+          <h2 class="projects">
+            <span class="hash">#</span>Projetos <span class="line"></span>
+            <a href="/projetos.html" class="view-more-top"> Ver mais</a>
+          </h2>
+          <div class="works-grid">
+            <div class="cards">
+              <div class="card-img">
+                <img src="./assets/cars-img.jpg" alt="" />
+              </div>
+              <div class="card-specifications">
+                <div class="card-lenguages">
+                  <p>React+Vite | Tailwind | HTML</p>
+                </div>
+
+                <div class="card-summary">
+                  <p class="title-summary">Cars</p>
+                  <p class="sumarry">Projeto para pesquisar tipo de carro</p>
+                  <a href="https://carros-hectorpellegrino32b.vercel.app/" target="_blank" >Visitar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="card-img">
+                <img src="./assets/feedback-img.jpg" alt="" />
+              </div>
+
+              <div class="card-specifications">
+                <div class="card-lenguages">
+                  <p>HTML5 | Styled-Components | JavaScript</p>
+                </div>
+
+                <div class="card-summary">
+                  <p class="title-summary">Feedback</p>
+                  <p class="sumarry">Projeto para uma avalição de notas</p>
+                  <a id="skills-section" href="https://feedback-hectorpellegrino32b.vercel.app/" target="_blank">Visitar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="card-img">
+                <img src="./assets/lp-vacina.jpg" alt="" />
+              </div>
+
+              <div class="card-specifications">
+                <div class="card-lenguages">
+                  <p>TypeScript | Next.JS | Tailwind</p>
+                </div>
+
+                <div class="card-summary">
+                  <p class="title-summary">Landing Page</p>
+                  <p class="sumarry">Landing Page com tema da vacinação do covid-19</p>
+                  <a href="https://landing-page-vaccination.vercel.app/" target="_blank">Visitar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="h2-view-more">
+            <a href="/projetos.html" class="view-more-bottom">Ver mais</a>
+            <span class="line"></span>
+          </h2>
+        </section>
+
+        <section class="skills-section">
+          <h2>
+            <span class="hash">#</span>Ferramentas <span class="line"></span>
+          </h2>
+          <div class="skills-grid">
+            <div class="card">
+              <h3>Linguagens</h3>
+              <p>
+                HTMl5<br />CSS3 <br />JavaScript <br />
+                Python
+              </p>
+            </div>
+            <div class="card">
+              <h3>Frameworks</h3>
+              <p>
+                React<br />Node.js<br />Tailwind <br />
+                Next.JS
+              </p>
+            </div>
+            <div class="card">
+              <h3>Databases</h3>
+              <p>MySQL<br />MongoDb</p>
+            </div>
+            <div class="card">
+              <h3>Ferramentas</h3>
+              <p>VSCode<br />Figma<br />GitHub</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills-section">
+          <h2>
+            <span class="hash">#</span>soft skills <span class="line"></span>
+          </h2>
+          <div class="skills-grid">
+            <div class="card">
+              <p>
+                <li>Proatividade</li>
+                <br />
+                <li>Liderança</li>
+              </p>
+            </div>
+            <div class="card">
+              <p>
+                <li>Resiliência</li>
+                <br />
+                <li>Trabalho em equipe</li>
+              </p>
+            </div>
+            <div class="card">
+              <p>
+                <li>Gestão de tempo</li>
+                <br />
+                <li>Solução de problemas</li>
+              </p>
+            </div>
+            <div id="about-me" class="card">
+              <p>
+                <li>Organização</li>
+                <br />
+                <li>Comunicação eficaz</li>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="about-me">
+          <h2>
+            <span class="hash">#</span>Sobre mim <span class="line"></span>
+          </h2>
+          <div class="grid-about-me">
+            <div class="paragraph-about-me">
+              <p>
+                Eaí, tudo bem? Bom dia, boa tarde ou boa noite, não sei que horas
+                você tá lendo isso, mas seja muito bem-vindo(a)! Muito prazer,
+                meu nome é Héctor Pellegrino, mas pode me chamar de Pellegrino
+                mesmo. Se você chegou até aqui, imagino que queira conhecer um
+                pouco mais sobre mim. Atualmente, estou cursando Análise e
+                Desenvolvimento de Sistemas e em busca da minha primeira
+                oportunidade profissional na área da programação. Antes da
+                faculdade, fiz um curso técnico de TI integrado ao Ensino Médio,
+                e foi ali que tudo começou. Tive meu primeiro contato com
+                programação e logo percebi que era com isso que eu queria
+                trabalhar.
+              </p>
+              <p>
+                Durante o técnico, aprendi bastante coisa: Banco de Dados com
+                MySQL, Desenvolvimento Web, Lógica de Programação, UX/UI e
+                outras matérias que me deram uma boa base. A partir dali, a
+                vontade de aprender só cresceu e continua até hoje! Tenho 18
+                anos e muita vontade de entrar de verdade no mercado, colocar a
+                mão na massa, aprender na prática e contribuir com o que sei.
+                Sou uma pessoa curiosa, esforçada e sempre buscando evoluir,
+                tanto profissional quanto pessoalmente. Se você acredita que
+                posso somar ao seu time ou projeto, vai ser um prazer conversar.
+                Estou aberto a oportunidades, parcerias e bons papos sobre
+                tecnologia. Obrigado por chegar até aqui e até logo!
+              </p>
+            </div>
+            <img src="./assets/img-perfil.jpg" alt="" />
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2><span class="hash">#</span>contato <span class="line"></span></h2>
+          <div class="grid-contact">
+            <div class="contact-left">
+              <p>
+                Se você chegou até aqui é porque quer falar comigo! me manda uma mensagem em algum dos contatos ao lado e te responderei o mais rápido possível ! Muito obrigado
+              </p>
+            </div>
+            <div class="contact-right">
+              <h3>Fale comigo aqui</h3>
+              <div class="contacts">
+                <div class="email">
+                  <a
+                    target="_blank"
+                    href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqSvjRjPnCWDCcfgldGtvmlpcxhKzZgLTsZttwmdSZgkGqCLkpfRnjBhqHGwrJkDkFNnfL"
+                    ><img src="./assets/envelope.png" alt="" />
+                    hectorpellegrino777@gmail.com</a
+                  >
+                </div>
+                <div class="whats">
+                  <a target="_blank" href="https://wa.me/5511973810705"
+                    ><img src="./assets/whatsapp.png" alt="" /> Whatsapp</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="line-end"></div>
+      </main>
+
+      <footer>
+        <div class="footer-left">
+          <p>Héctor Fabro Pellegrino</p>
+        </div>
+        <div class="footer-right">
+          <div class="imgs">
+            <a
+              href="https://www.linkedin.com/in/h%C3%A9ctor-pellegrino/"
+              target="_blank"
+              ><img src="./assets/linkedin.png" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/hectorpellegriino/"
+              target="_blank"
+              ><img src="./assets/instagram.png" alt=""
+            /></a>
+            <a href="https://github.com/Hector-pellegrino" target="_blank"
+              ><img src="./assets/github.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document
+        .getElementById("form-contato")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Impede o comportamento padrão do submit
+
+          const form = e.target;
+          const data = new FormData(form);
+
+          fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                form.reset();
+                document.getElementById("mensagem-sucesso").style.display =
+                  "block";
+              } else {
+                alert("Erro ao enviar. Tente novamente.");
+              }
+            })
+            .catch(() => {
+              alert("Erro de conexão. Tente novamente.");
+            });
+        });
+    </script>
+  </body>
+</html>
