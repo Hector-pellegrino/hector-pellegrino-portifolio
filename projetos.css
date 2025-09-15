@@ -19,10 +19,20 @@ html {
 }
 
 body {
+  width: 100%;
   background: linear-gradient(90deg, #003000, #000000, #000000, #003000);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
+.layout-wrapper {
+  height: 100dvh;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   z-index: 10;
   position: sticky;
@@ -48,6 +58,7 @@ hr {
 }
 
 main {
+  height: 100%;
   color: #ffff;
   background-color: var(--bg-focal);
 }
@@ -143,8 +154,7 @@ h2 {
 .grid-projetos {
   padding: 25px;
   display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
@@ -152,15 +162,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 0px;
-  border: 1px solid #8eb69b;
   height: auto;
-  max-width: 450;
+  border: 1px solid #8eb69b;
 }
 
 img {
   width: 100%;
-  height: auto;
 }
 .card-img {
   margin: 0;
@@ -303,10 +310,11 @@ footer {
   body {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .layout-wrapper {
-    width: 100%;
+    width: 80%;
     max-width: 1440px;
     display: flex;
     flex-direction: column;
