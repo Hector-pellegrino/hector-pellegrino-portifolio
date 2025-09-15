@@ -231,30 +231,34 @@ h2 {
 
 .works-grid {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   align-items: start;
 }
 
 .cards {
-  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   border: 1px solid #8eb69b;
-  max-width: 450px;
 }
 
 img {
   width: 100%;
-  height: auto;
 }
+
 .card-img {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #8eb69b;
 }
 
 .card-lenguages {
-  border-block: 1px solid #8eb69b;
+  border-bottom: 1px solid #8eb69b;
   padding: 10px 0px;
   color: hsl(0, 0%, 100%, 0.5);
   font-size: 15px;
@@ -311,6 +315,9 @@ img {
   margin-bottom: 40px;
 }
 
+.skills-section li {
+  list-style: none;
+}
 .hash {
   color: #ffc572;
   margin-right: 8px;
@@ -394,6 +401,7 @@ img {
 .grid-contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 15px;
 }
 

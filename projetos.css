@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,500;1,500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,500;1,500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
   --bg-body: linear-gradient(90deg, rgb(0, 29, 0), rgb(0, 85, 0));
@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, #003000,#000000, #000000,#003000 );
-  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(90deg, #003000, #000000, #000000, #003000);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 header {
@@ -39,7 +39,6 @@ header {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-
 .hector {
   color: white;
 }
@@ -49,7 +48,6 @@ hr {
 }
 
 main {
-
   color: #ffff;
   background-color: var(--bg-focal);
 }
@@ -84,14 +82,12 @@ nav {
 
 nav li {
   list-style: none;
-
 }
 .a-nav {
   padding-left: 20px;
   text-decoration: none;
   color: hsl(0, 0%, 70%);
   font-size: 20px;
-
 }
 
 nav p:hover,
@@ -114,46 +110,48 @@ header p:hover {
   transition: all 0.3s;
 }
 
-.menu.ativo .bar:nth-child(1){
+.menu.ativo .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-} 
-.menu.ativo .bar:nth-child(2){
+}
+.menu.ativo .bar:nth-child(2) {
   opacity: 0;
-} 
-.menu.ativo .bar:nth-child(3){
+}
+.menu.ativo .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-} 
+}
 
 .titles {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
 }
 h1 {
-    font-size: 35px;
-    font-weight: 300;
+  font-size: 35px;
+  font-weight: 300;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: 200;
+  font-size: 20px;
+  font-weight: 200;
 }
 .hash {
   color: #ffc572;
   margin-right: 8px;
 }
 
-
 .grid-projetos {
-    padding: 25px;
+  padding: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
-  align-items: start;
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0px 0px;
   border: 1px solid #8eb69b;
   height: auto;
@@ -199,20 +197,20 @@ img {
 }
 
 .card-summary a:hover {
-    cursor: pointer;
-    background-color: #ffff;
-    color: #8eb69b;
-    transition: 0.5s;
+  cursor: pointer;
+  background-color: #ffff;
+  color: #8eb69b;
+  transition: 0.5s;
 }
 .buttons {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   max-width: 100%;
 }
 .title-summary {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .sumarry {
@@ -220,47 +218,51 @@ img {
   color: hsl(0, 0%, 100%, 0.5);
 }
 
-
 footer {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 5px;
-    background-color: #1e1e1e;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.footer-right img, .contacts img{
-    width: 20px;
-    height: auto;
+.footer-right img,
+.contacts img {
+  width: 20px;
+  height: auto;
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-right .imgs {
-    display: flex;
-    gap: 10px;
-
+  display: flex;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
-
-  .skills-section h2, .projects h2, .about-me h2, .contact h2{
+  .skills-section h2,
+  .projects h2,
+  .about-me h2,
+  .contact h2 {
     font-size: 35px;
   }
-  .works, .skills-section, .about-me, .contact {
+  .works,
+  .skills-section,
+  .about-me,
+  .contact {
     padding: 60px;
   }
-  
+
   .works .view-more-top {
     display: block;
   }
@@ -297,27 +299,26 @@ footer {
   }
 }
 
-@media (min-width: 1440px){
- body {
+@media (min-width: 1440px) {
+  body {
     display: flex;
     justify-content: center;
-   
   }
 
   .layout-wrapper {
     width: 100%;
-    max-width: 1440px; 
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
   }
 
   header {
-    background-color: var(--bg-focal); 
+    background-color: var(--bg-focal);
   }
 
-  main, footer {
+  main,
+  footer {
     margin: 0;
     padding-inline: 0;
   }
 }
-
