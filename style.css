@@ -237,7 +237,7 @@ h2 {
 .works-grid {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 20px;
   align-items: start;
 }

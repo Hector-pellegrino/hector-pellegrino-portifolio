@@ -152,7 +152,8 @@ h2 {
 .grid-projetos {
   padding: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -166,6 +167,7 @@ h2 {
 
 img {
   width: 100%;
+  height: auto;
 }
 .card-img {
   margin: 0;
@@ -209,7 +211,8 @@ img {
 }
 .buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  flex-wrap: wrap;
   gap: 10px;
   max-width: 100%;
 }
@@ -328,4 +331,8 @@ footer {
     margin: 0;
     padding-inline: 0;
   }
+
+  .grid-projetos {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 }
